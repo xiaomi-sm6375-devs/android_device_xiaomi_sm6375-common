@@ -186,14 +186,11 @@ PRODUCT_PACKAGES += \
     gps.conf \
     izat.conf \
     lowi.conf \
-    sap.conf \
-    xtwifi.conf
+    sap.conf
 
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy \
-    gnss@2.0-xtwifi-client.policy \
-    gnss@2.0-xtwifi-inet-agent.policy
+    gnss@2.0-xtra-daemon.policy
 
 # GSI Keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
