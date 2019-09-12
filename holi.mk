@@ -27,6 +27,9 @@ PRODUCT_PACKAGES += \
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# APEX's
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # AVB
 PRODUCT_PACKAGES += \
     q-gsi.avbpubkey \
