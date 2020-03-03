@@ -66,12 +66,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_holi/bluetooth_audio_policy_configuration.xml \
 
-# AVB
-PRODUCT_PACKAGES += \
-    q-gsi.avbpubkey \
-    r-gsi.avbpubkey \
-    s-gsi.avbpubkey
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -189,9 +183,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy
-
-# GSI Keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
