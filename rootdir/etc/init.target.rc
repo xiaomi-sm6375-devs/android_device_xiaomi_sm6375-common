@@ -286,3 +286,11 @@ service checknv /system/bin/checknv
 # Sync attribute value between system and vendor
 on property:persist.sys.mcc.mnc=*
     setprop persist.vendor.mcc.mnc ${persist.sys.mcc.mnc}
+
+on property:graphics.display.kernel_idle_timer.enabled=true
+    # Switch display mode to 60hz when idle
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "@60"
+
+on property:graphics.display.kernel_idle_timer.enabled=false
+    # Disable aggressive idle mode switching
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
