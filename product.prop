@@ -4,3 +4,8 @@ audio.sys.mute.latency.factor=2
 audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
+
+# Transcoding related property.
+debug.media.transcoding.codec_max_operating_rate_720P=240
+debug.media.transcoding.codec_max_operating_rate_1080P=120
+
