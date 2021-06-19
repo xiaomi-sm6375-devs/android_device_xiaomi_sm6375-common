@@ -269,5 +269,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.xiaomi_holi
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm6375-common/sm6375-common-vendor.mk)
