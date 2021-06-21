@@ -262,6 +262,16 @@ service svi_on /vendor/bin/ppd "svi:on"
     oneshot
     disabled
 
+on property:init.svc.vendor.nv_mac=stopped
+    start vendor.btmac-sh
+
+service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
+    class late_start
+    user system
+    group system bluetooth wifi
+    oneshot
+    disabled
+
 on property:ro.vendor.display.svi=1 && property:sys.boot_completed=1
     start svi_on
 	

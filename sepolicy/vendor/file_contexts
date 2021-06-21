@@ -9,6 +9,9 @@
 /vendor/bin/batterysecret								u:object_r:batterysecret_exec:s0
 /mnt/vendor/persist/subsys(/.*)?							u:object_r:persist_subsys_file:s0
 
+# Bluetooth
+/vendor/bin/init\.mi\.btmac\.sh								u:object_r:vendor_qti_init_shell_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?							u:object_r:camera_persist_file:s0
 
