@@ -112,7 +112,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
     libtinyxml \
-    memtrack.default
+    memtrack.default \
+    vndservicemanager
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
