@@ -51,7 +51,6 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
 # CNE
-vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/etc/cne/mwqem.conf
