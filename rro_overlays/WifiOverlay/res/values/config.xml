@@ -62,6 +62,9 @@
     <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
     <bool translatable="false" name="config_wifi_report_he_ready">true</bool>
 
+    <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
+    <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
+
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
