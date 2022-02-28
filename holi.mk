@@ -339,6 +339,9 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext-privapp-permissions-qti.xml
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
