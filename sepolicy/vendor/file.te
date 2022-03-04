@@ -12,3 +12,6 @@ type vendor_fingerprint_data_file, data_file_type, file_type;
 
 # Thermal
 type thermal_data_file, data_file_type, file_type;
+
+# Touchpanel
+type proc_touchpanel, fs_type, proc_type;

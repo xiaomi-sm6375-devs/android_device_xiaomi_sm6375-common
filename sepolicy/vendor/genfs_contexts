@@ -16,6 +16,9 @@ genfscon sysfs /devices/platform/soc/6000000.qcom,mss/subsys[0-9]+/restart_level
 genfscon sysfs /devices/platform/soc/5ab0000.qcom,venus/subsys[0-9]+/name		u:object_r:vendor_sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/5ab0000.qcom,venus/subsys[0-9]+/restart_level	u:object_r:vendor_sysfs_ssr_toggle:s0
 
+# Touchpanel
+genfscon proc /tp_gesture								u:object_r:proc_touchpanel:s0
+
 # Wakeup nodes
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup				u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:silead_fp/wakeup				u:object_r:sysfs_wakeup:s0
