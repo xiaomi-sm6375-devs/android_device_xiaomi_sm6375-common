@@ -30,6 +30,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # APEX's
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Audio
+PRODUCT_PACKAGES += \
+    libvolumelistener \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcompostprocbundle
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@6.0-impl:32 \
+    android.hardware.audio.service \
+    android.hardware.audio@6.0-impl:32 \
+    android.hardware.soundtrigger@2.2-impl \
+    audioadsprpcd \
+    audio.a2dp.default \
+    audio.primary.holi \
+    audio.r_submix.default \
+    audio.usb.default \
+    liba2dpoffload \
+    libbatterylistener \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor
+
 # AVB
 PRODUCT_PACKAGES += \
     q-gsi.avbpubkey \
