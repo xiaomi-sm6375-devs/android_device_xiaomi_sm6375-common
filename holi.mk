@@ -173,6 +173,27 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation \
     libstagefright_softomx.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    android.hardware.secure_element@1.0 \
+    vendor.nxp.hardware.nfc@2.0-service \
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
+    libnqp61-jcop-kit \
+    nfc_nci.nqx.default \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    NfcNci \
+    SecureElement \
+    Tag
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/pn5xx
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
