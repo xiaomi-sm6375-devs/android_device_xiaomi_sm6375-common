@@ -146,6 +146,11 @@ PRODUCT_PACKAGES += \
 # GSI Keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
