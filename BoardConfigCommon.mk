@@ -6,6 +6,21 @@
 
 COMMON_PATH := device/xiaomi/sm6375-common
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -55,6 +70,31 @@ BOARD_KERNEL_CMDLINE += pcie_ports=compat
 BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 109156577280
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
+
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm system system_ext vendor product
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # BOARD_SUPER_PARTITION_SIZE - 4MB
+
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_PRODUCT := product
+
+BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Inherit the proprietary files
 include vendor/xiaomi/sm6375-common/BoardConfigVendor.mk
