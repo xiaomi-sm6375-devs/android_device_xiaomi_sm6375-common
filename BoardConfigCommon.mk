@@ -96,5 +96,9 @@ TARGET_COPY_OUT_PRODUCT := product
 
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := holi
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6375-common/BoardConfigVendor.mk
