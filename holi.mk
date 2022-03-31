@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     r-gsi.avbpubkey \
     s-gsi.avbpubkey
 
+# Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \

@@ -102,6 +102,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
+# Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Platform
