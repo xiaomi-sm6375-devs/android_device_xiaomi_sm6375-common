@@ -128,6 +128,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
+
+PRODUCT_PACKAGES += \
+    libdrm
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

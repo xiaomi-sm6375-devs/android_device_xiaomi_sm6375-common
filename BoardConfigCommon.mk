@@ -59,6 +59,9 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # HIDL
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
