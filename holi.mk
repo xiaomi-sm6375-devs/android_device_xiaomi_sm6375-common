@@ -27,6 +27,12 @@ PRODUCT_PACKAGES += \
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# AVB
+PRODUCT_PACKAGES += \
+    q-gsi.avbpubkey \
+    r-gsi.avbpubkey \
+    s-gsi.avbpubkey
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
