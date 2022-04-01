@@ -5,7 +5,7 @@
 //
 
 cc_library_static {
-    name: "libinit_xiaomi_kona",
+    name: "libinit_xiaomi_holi",
     srcs: [
         "libinit_dalvik_heap.cpp",
         "libinit_variant.cpp",
@@ -17,9 +17,9 @@ cc_library_static {
 }
 
 cc_library_static {
-    name: "init_xiaomi_kona",
-    srcs: ["init_xiaomi_kona.cpp"],
-    whole_static_libs: ["libinit_xiaomi_kona"],
+    name: "init_xiaomi_holi",
+    srcs: ["init_xiaomi_holi.cpp"],
+    whole_static_libs: ["libinit_xiaomi_holi"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }
