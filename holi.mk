@@ -133,6 +133,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio \
+    qcom.fmradio.xml
+
 # GSI Keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
