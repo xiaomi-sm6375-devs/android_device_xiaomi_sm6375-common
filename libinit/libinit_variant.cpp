@@ -11,15 +11,15 @@
 
 using android::base::GetProperty;
 
-#define HWC_PROP "ro.boot.hwc"
+#define MODEL_PROP "ro.boot.board_id"
 #define SKU_PROP "ro.boot.product.hardware.sku"
 
 void search_variant(const std::vector<variant_info_t> variants) {
-    std::string hwc_value = GetProperty(HWC_PROP, "");
+    std::string model_value = GetProperty(MODEL_PROP, "");
     std::string sku_value = GetProperty(SKU_PROP, "");
 
     for (const auto& variant : variants) {
-        if ((variant.hwc_value == "" || variant.hwc_value == hwc_value) &&
+        if ((variant.model_value == "" || variant.model_value == model_value) &&
             (variant.sku_value == "" || variant.sku_value == sku_value)) {
             set_variant_props(variant);
             break;
@@ -32,6 +32,7 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("device", variant.device, true);
     set_ro_build_prop("marketname", variant.marketname, true);
     set_ro_build_prop("model", variant.model, true);
+    set_ro_build_prop("name", variant.name, true);
 
     set_ro_build_prop("fingerprint", variant.build_fingerprint);
     property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
