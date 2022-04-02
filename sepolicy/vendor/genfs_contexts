@@ -1,0 +1,8 @@
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fpc1020					u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp					u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:silead_fp					u:object_r:vendor_sysfs_fingerprint:s0
+
+# Wakeup nodes
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup				u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:silead_fp/wakeup				u:object_r:sysfs_wakeup:s0
