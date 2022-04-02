@@ -191,6 +191,7 @@ VENDOR_SECURITY_PATCH := 2022-02-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot

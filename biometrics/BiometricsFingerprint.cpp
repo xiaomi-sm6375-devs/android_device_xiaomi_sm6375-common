@@ -14,8 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_holi"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_holi"
 
 #include <hardware/hw_auth_token.h>
 
@@ -39,10 +39,8 @@ static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
 // List of fingerprint HALs
 static const char *kHALClasses[] = {
     "fpc",
-    "fpc_fod",
     "goodix",
-    "goodix_fod",
-    "goodix_fod6",
+    "silead",
 };
 
 using RequestStatus =

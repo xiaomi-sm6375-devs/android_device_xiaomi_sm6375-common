@@ -1,6 +1,18 @@
 # Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi_kona		u:object_r:hal_fingerprint_default_exec:s0
-
+/dev/goodix_fp											u:object_r:vendor_fingerprint_device:s0
+/dev/silead_fp											u:object_r:vendor_fingerprint_device:s0
+/dev/silead_s.*											u:object_r:vendor_fingerprint_device:s0
+/dev/silead_stub										u:object_r:vendor_fingerprint_device:s0
+/dev/spidev.*											u:object_r:vendor_fingerprint_device:s0
+/mnt/vendor/persist/silead(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?										u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix/gf_data(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/silead(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi_holi		u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service				u:object_r:hal_fingerprint_default_exec:s0
 # Power
 /dev/xiaomi-touch										u:object_r:vendor_touchfeature_device:s0
 
