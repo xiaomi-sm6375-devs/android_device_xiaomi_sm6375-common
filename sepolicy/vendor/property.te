@@ -1,0 +1,5 @@
+# Camera
+vendor_internal_prop(vendor_camera_sensor_prop);
+
+# Thermal
+vendor_internal_prop(vendor_thermal_normal_prop)

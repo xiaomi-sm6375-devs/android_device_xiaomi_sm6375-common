@@ -1,21 +1,50 @@
+  # Audio
+/dev/socket/audio_hw_socket								u:object_r:audio_socket:s0
+/dev/elliptic(.*)?									u:object_r:sound_device:s0
+/mnt/vendor/persist/audio/cali_test.bin							u:object_r:vendor_persist_audio_file:s0
+/mnt/vendor/persist/audio/fsm_calib.bin							u:object_r:vendor_persist_audio_file:s0
+/mnt/vendor/persist/audio/aw_cali.bin							u:object_r:vendor_persist_audio_file:s0
+
+# Battery
+/vendor/bin/batterysecret								u:object_r:batterysecret_exec:s0
+/mnt/vendor/persist/subsys(/.*)?							u:object_r:persist_subsys_file:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?							u:object_r:camera_persist_file:s0
+
 # Fingerprint
-/dev/goodix_fp											u:object_r:vendor_fingerprint_device:s0
-/dev/silead_fp											u:object_r:vendor_fingerprint_device:s0
-/dev/silead_s.*											u:object_r:vendor_fingerprint_device:s0
-/dev/silead_stub										u:object_r:vendor_fingerprint_device:s0
-/dev/spidev.*											u:object_r:vendor_fingerprint_device:s0
-/mnt/vendor/persist/silead(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
-/mnt/vendor/persist/goodix(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/fpc(/.*)?										u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/fpdump(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/goodix(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/goodix/gf_data(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/silead(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi_holi		u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service				u:object_r:hal_fingerprint_default_exec:s0
+/dev/goodix_fp										u:object_r:vendor_fingerprint_device:s0
+/dev/silead_fp										u:object_r:vendor_fingerprint_device:s0
+/dev/silead_s.*										u:object_r:vendor_fingerprint_device:s0
+/dev/silead_stub									u:object_r:vendor_fingerprint_device:s0
+/dev/spidev.*										u:object_r:vendor_fingerprint_device:s0
+/mnt/vendor/persist/silead(/.*)?							u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?							u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix/gf_data(/.*)?							u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/silead(/.*)?								u:object_r:vendor_fingerprint_data_file:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi_holi	u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service			u:object_r:hal_fingerprint_default_exec:s0
+
+# IR
+/dev/ir_spi										u:object_r:ir_spi_device:s0
+
+# NFC
+/dev/pn553										u:object_r:nfc_device:s0
+/dev/pn54x										u:object_r:nfc_device:s0
 
 # Sensors
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi_holi-multihal			u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi_holi-multihal		u:object_r:hal_sensors_default_exec:s0
+
+# Thermal
+/data/vendor/thermal(/.*)?								u:object_r:thermal_data_file:s0
+/vendor/bin/mi_thermald									u:object_r:mi_thermald_exec:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_holi				u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_holi			u:object_r:hal_vibrator_default_exec:s0
+
+# Xiaomi MAC
+/data/vendor/mac_addr(/.*)?								u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/wlan_logs(/.*)?								u:object_r:vendor_wifi_vendor_data_file:s0
