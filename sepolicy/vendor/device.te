@@ -1,2 +1,8 @@
+# Audio device
+type sound_device, dev_type;
+
 # Fingerprint device
 type vendor_fingerprint_device, dev_type;
+
+# IR device
+type ir_spi_device, dev_type;

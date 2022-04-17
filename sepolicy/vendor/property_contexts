@@ -1,6 +1,22 @@
+# Camera
+persist.camera.				u:object_r:vendor_camera_prop:s0
+ro.boot.camera.config			u:object_r:vendor_camera_sensor_prop:s0
+vendor.camera.config.			u:object_r:vendor_camera_sensor_prop:s0
+
 # Fingerprint
 persist.vendor.sys.fp.			u:object_r:vendor_fp_prop:s0
 ro.hardware.fp.				u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.				u:object_r:vendor_fp_prop:s0
 vendor.silead.fp.ext.			u:object_r:vendor_fp_prop:s0
-sys.fp.vendor				u:object_r:vendor_fp_prop:s0
+
+# RIL
+odm.ril.radio.status.			u:object_r:vendor_radio_prop:s0
+odm.ril.radio.status.sim1		u:object_r:vendor_radio_prop:s0
+odm.ril.radio.status.sim2		u:object_r:vendor_radio_prop:s0
+
+# Thermal
+vendor.sys.thermal.			u:object_r:vendor_thermal_normal_prop:s0
+
+# Wi-Fi
+ro.vendor.ril.oem.btmac			u:object_r:vendor_wifi_prop:s0
+ro.vendor.ril.oem.wifimac		u:object_r:vendor_wifi_prop:s0

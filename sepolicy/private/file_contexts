@@ -1,0 +1,2 @@
+# Dev nodes
+/dev/stune(/.*)?                                        u:object_r:cgroup:s0
