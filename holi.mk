@@ -264,6 +264,10 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation \
     libstagefright_softomx.vendor
 
+# Mlipay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
