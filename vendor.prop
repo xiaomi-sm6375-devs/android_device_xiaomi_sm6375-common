@@ -165,6 +165,9 @@ persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
+# DRM
+drm.service.enabled=true
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
