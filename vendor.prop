@@ -134,6 +134,10 @@ ro.audio.monitorRotation=true
 persist.vendor.audio.misound.disable=true
 persist.vendor.audio.delta.refresh=true
 
+# Audio volume steps
+ro.config.media_vol_steps=15
+ro.config.vc_call_vol_steps=11
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-lhdc
 persist.bluetooth.a2dp_offload.disabled=false
