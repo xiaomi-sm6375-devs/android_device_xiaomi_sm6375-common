@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
     android.hardware.secure_element@1.0.vendor \
     com.android.nfc_extras \
+    libchrome.vendor \
     vendor.nxp.nxpese@1.0 \
     vendor.nxp.nxpnfclegacy@1.0 \
     vendor.nxp.nxpnfclegacy@1.0.vendor \
