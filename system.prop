@@ -25,6 +25,9 @@ persist.mm.enable.prefetch=true
 ro.media.recorder-max-base-layer-fps=60
 vendor.mm.enable.qcom_parser=16777215
 
+# Netflix custom property
+ro.netflix.bsp_rev=Q4350-32962-1
+
 # NFC
 ro.nfc.port=I2C
 
