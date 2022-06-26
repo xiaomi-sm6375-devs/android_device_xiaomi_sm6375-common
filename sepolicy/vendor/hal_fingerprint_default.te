@@ -3,8 +3,8 @@ allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 # Props
-set_prop(hal_fingerprint_default, vendor_fp_prop)
-get_prop(system_server, vendor_fp_prop);
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+get_prop(system_server, vendor_fingerprint_prop);
 
 # Sysfs
 allow hal_fingerprint_default {
