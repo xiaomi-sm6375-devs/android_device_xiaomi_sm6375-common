@@ -220,6 +220,10 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
 
+# Media
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
+
 # NFC
 ro.vendor.se.type=HCE,UICC
 
