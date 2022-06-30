@@ -445,13 +445,13 @@ vendor/bin/nqnfcinfo
 vendor/etc/init/android.hardware.nfc@1.2-service.rc
 vendor/etc/init/init.veux.nfc.rc
 vendor/etc/init/init.veux.se.rc
+vendor/etc/permissions/com.nxp.nfc.xml:odm/etc/permissions/sku_nfc/com.nxp.nfc.xml
 vendor/etc/libese-nxp.conf
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
-vendor/etc/permissions/com.nxp.nfc.xml:odm/etc/permissions/sku_nfc/com.nxp.nfc.xml
 vendor/lib64/ese_client.so
 vendor/lib64/ese_spi_nxp.so
 vendor/lib64/hal_libnfc.so
@@ -691,7 +691,6 @@ vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
-vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
@@ -713,7 +712,6 @@ vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmimiscservices.so
-vendor/lib64/librilqmiservices.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsystem_health_mon.so
