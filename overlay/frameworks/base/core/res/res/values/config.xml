@@ -50,6 +50,7 @@
         <item>bluetooth,7,7,2,-1,true</item>
         <item>mobile_emergency,15,0,5,-1,true</item>
         <item>ethernet,9,9,9,-1,true</item>
+        <item>wifi_slave,30,1,1,-1,true</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -88,11 +89,6 @@
          flag is set for wifi displays.
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
-
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
@@ -140,7 +136,8 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
+    <integer name="config_screenBrightnessDoze">13</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.00317460317</item>
 
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
