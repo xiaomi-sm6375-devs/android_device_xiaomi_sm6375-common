@@ -199,9 +199,6 @@
     <!-- Tx current for bluetooth controller. 0 by default-->
     <integer name="config_bluetooth_tx_cur_ma">36</integer>
 
-    <!-- Operating volatage for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_operating_voltage_mv">3700</integer>
-
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
