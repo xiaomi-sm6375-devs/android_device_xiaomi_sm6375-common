@@ -5,45 +5,6 @@ audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 
-# Bluetooth
-bluetooth.hardware.power.idle_cur_ma=36
-bluetooth.hardware.power.operating_voltage_mv=3700
-bluetooth.hardware.power.rx_cur_ma=20
-bluetooth.hardware.power.tx_cur_ma=3
-
-# Set the Bluetooth Class of Device
-# Service Field: 0x5A -> 90
-#    Bit 17: Networking
-#    Bit 19: Capturing
-#    Bit 20: Object Transfer
-#    Bit 22: Telephony
-# MAJOR_CLASS: 0x02 -> 2 (Phone)
-# MINOR_CLASS: 0x0C -> 12 (Smart Phone)
-bluetooth.device.class_of_device=90,2,12
-
-# Set supported Bluetooth profiles to enabled
-bluetooth.profile.asha.central.enabled?=true
-bluetooth.profile.a2dp.source.enabled?=true
-bluetooth.profile.avrcp.target.enabled?=true
-bluetooth.profile.bap.broadcast.assist.enabled?=true
-bluetooth.profile.bap.unicast.client.enabled?=true
-bluetooth.profile.bas.client.enabled?=true
-bluetooth.profile.csip.set_coordinator.enabled?=true
-bluetooth.profile.gatt.enabled?=true
-bluetooth.profile.hap.client.enabled?=true
-bluetooth.profile.hfp.ag.enabled?=true
-bluetooth.profile.hid.device.enabled?=true
-bluetooth.profile.hid.host.enabled?=true
-bluetooth.profile.map.server.enabled?=true
-bluetooth.profile.mcp.server.enabled?=true
-bluetooth.profile.opp.enabled?=true
-bluetooth.profile.pan.nap.enabled?=true
-bluetooth.profile.pan.panu.enabled?=true
-bluetooth.profile.pbap.server.enabled?=true
-bluetooth.profile.sap.server.enabled?=true
-bluetooth.profile.ccp.server.enabled?=true
-bluetooth.profile.vcp.controller.enabled?=true
-
 # Radio
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
