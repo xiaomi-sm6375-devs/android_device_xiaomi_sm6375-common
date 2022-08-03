@@ -1,1 +1,1 @@
-get_prop({ appdomain -isolated_app }, vendor_mlipay_prop)
+get_prop({ appdomain -isolated_app }, vendor_tee_listener_prop)

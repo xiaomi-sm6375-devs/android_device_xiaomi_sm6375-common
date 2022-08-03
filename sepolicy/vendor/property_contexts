@@ -10,8 +10,8 @@ vendor.fps_hal.				u:object_r:vendor_fp_prop:s0
 vendor.silead.fp.ext.			u:object_r:vendor_fp_prop:s0
 
 # Mlipay
-persist.vendor.sys.pay.			u:object_r:vendor_mlipay_prop:s0
-persist.vendor.sys.provision.status	u:object_r:vendor_mlipay_prop:s0
+persist.vendor.sys.pay.			u:object_r:vendor_tee_listener_prop:s0
+persist.vendor.sys.provision.status	u:object_r:vendor_tee_listener_prop:s0
 
 # RIL
 odm.ril.radio.status.			u:object_r:vendor_radio_prop:s0
