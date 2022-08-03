@@ -411,11 +411,11 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-holi.sh \
     init.qcom.sh \
     init.qcom.post_boot.sh \
-    init.nfc.rc \
     init.qcom.rc \
     init.qti.kernel.rc \
     init.qti.ufs.rc \
     init.target.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc \
     vendor_modprobe.sh
 
