@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from veux_global-user 11 RKQ1.211001.001 V13.0.14.0.RKCMIXM release-keys
+# All unpinned blobs below are extracted from veux_global-user 12 SKQ1.211006.001 V13.0.2.0.SKCMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -168,7 +168,7 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-system/framework/tcmclient.jar
+framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -597,7 +597,6 @@ system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
-system_ext/etc/permissions/telephonyservice.xml
 -system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 system_ext/lib/vendor.qti.hardware.radio.am@1.0.so
@@ -774,7 +773,7 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Soter service (Tencent)
--system/app/SoterService/SoterService.apk
+-vendor/app/SoterService/SoterService.apk
 
 # Thermal
 vendor/bin/mi_thermald
