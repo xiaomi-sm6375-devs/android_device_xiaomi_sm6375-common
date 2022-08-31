@@ -4,7 +4,7 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "android_kernel_xiaomi_sm6375",
+    "repository": "android_kernel_qcom_sm8350",
     "target_path": "kernel/xiaomi/sm6375"
   }
 ]
