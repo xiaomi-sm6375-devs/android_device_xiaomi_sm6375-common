@@ -43,7 +43,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     audioadsprpcd \
-    audio.primary.holi \
     audio.r_submix.default \
     audio.usb.default \
     libaudiopreprocessing \
@@ -124,7 +123,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libtinyxml \
     memtrack.default \
@@ -236,8 +234,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
@@ -263,8 +259,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0.vendor \
     NfcNci \
     SecureElement \
     Tag
