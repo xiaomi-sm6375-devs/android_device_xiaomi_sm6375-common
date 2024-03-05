@@ -860,6 +860,7 @@
     </CamcorderProfiles>
 
     <!-- Camera ID 3 -->
+    <!--
     <CamcorderProfiles cameraId="3">
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
@@ -986,7 +987,7 @@
              height="144"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -1000,7 +1001,7 @@
              height="1080"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="aac"
              bitRate="192000"
              sampleRate="48000"
@@ -1014,7 +1015,7 @@
              height="144"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -1028,7 +1029,7 @@
              height="288"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -1043,7 +1044,7 @@
              height="240"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -1057,7 +1058,7 @@
              height="480"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -1071,7 +1072,7 @@
              height="480"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="aac"
              bitRate="192000"
              sampleRate="48000"
@@ -1085,7 +1086,7 @@
              height="720"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="aac"
              bitRate="192000"
              sampleRate="48000"
@@ -1099,7 +1100,7 @@
              height="1080"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      
       <Audio codec="aac"
              bitRate="192000"
              sampleRate="48000"
@@ -1112,6 +1113,7 @@
         <ImageDecoding memCap="20000000" />
 
     </CamcorderProfiles>
+    -->
 
     <!-- Camera ID 4 -->
     <CamcorderProfiles cameraId="4">
