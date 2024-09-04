@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsOverlayVEUX",
+    name: "FrameworkOverlaySM6375",
     vendor: true,
 }

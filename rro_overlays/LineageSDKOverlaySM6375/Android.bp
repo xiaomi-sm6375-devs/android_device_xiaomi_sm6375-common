@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIOverlayVEUX",
-    vendor: true,
+    name: "LineageSDKOverlaySM6375",
+    product_specific: true,
 }

@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiOverlayVEUX",
+    name: "WifiOverlaySM6375",
     vendor: true,
 }

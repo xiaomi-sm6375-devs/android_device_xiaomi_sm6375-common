@@ -211,11 +211,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
-    FrameworkOverlayVEUX \
-    LineageSDKOverlayVEUX \
-    SettingsOverlayVEUX \
-    SystemUIOverlayVEUX \
-    WifiOverlayVEUX
+    FrameworkOverlaySM6375 \
+    LineageSDKOverlaySM6375 \
+    SettingsOverlaySM6375 \
+    SystemUIOverlaySM6375 \
+    WifiOverlaySM6375
 
 PRODUCT_PACKAGES += \
     SettingsProviderOverlay2201116SG \
@@ -392,4 +392,4 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit from proprietary targets
-$(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm6375-common/sm6375-common-vendor.mk)

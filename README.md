@@ -1,4 +1,4 @@
-# Device configuration for Redmi Note 11 Pro 5G
+# Common device configuration for Xiaomi sm6375 devices
 
 ```
 #

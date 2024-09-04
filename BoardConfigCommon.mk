@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/veux
+COMMON_PATH := device/xiaomi/sm6375-common
 
 # A/B
 AB_OTA_PARTITIONS := \
@@ -45,18 +45,17 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := veux
 TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/manifest.xml
+    $(COMMON_PATH)/manifest.xml
 
 DEVICE_MATRIX_FILE := \
     hardware/qcom-caf/common/compatibility_matrix.xml
@@ -69,7 +68,7 @@ ODM_MANIFEST_SKUS += \
     sn100
 
 ODM_MANIFEST_SN100_FILES := \
-    $(DEVICE_PATH)/manifest_ese.xml
+    $(COMMON_PATH)/manifest_ese.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -101,7 +100,6 @@ BOARD_KERNEL_CMDLINE := \
     ip6table_raw.raw_before_defrag=1 \
     firmware_class.path=/vendor/firmware
 
-TARGET_KERNEL_CONFIG := veux_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6375
 TARGET_KERNEL_NO_GCC := true
 
@@ -154,7 +152,7 @@ TARGET_BOARD_PLATFORM := holi
 
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -168,9 +166,9 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # SELinux
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
