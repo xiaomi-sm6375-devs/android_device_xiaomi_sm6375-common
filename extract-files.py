@@ -79,9 +79,6 @@ def blob_fixup_merge_files(
                 color_print(f'{file.dst}: failed to merge', color=Color.RED)
 
 blob_fixups: blob_fixups_user_type = {
-    ('odm/etc/build_S88006AA1.prop', 'odm/etc/build_S88007AA1.prop', 'odm/etc/build_S88007EA1.prop', 'odm/etc/build_S88008BA1.prop', 'odm/etc/build_S88106BA1.prop', 'odm/etc/build_S88107BA1.prop'): blob_fixup()
-        .regex_replace(r'.+marketname.+\n', '')
-        .regex_replace('cert', 'model'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
