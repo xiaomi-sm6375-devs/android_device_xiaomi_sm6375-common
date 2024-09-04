@@ -243,12 +243,6 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
-# Firmware (touchscreen)
-vendor/firmware/goodix_cfg_group.bin
-vendor/firmware/goodix_cfg_group.bin:recovery/root/vendor/firmware/goodix_cfg_group.bin
-vendor/firmware/goodix_firmware.bin
-vendor/firmware/goodix_firmware.bin:recovery/root/vendor/firmware/goodix_firmware.bin
-
 # Firmware (vibrator)
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_osc_rtp_24K_5s.bin
