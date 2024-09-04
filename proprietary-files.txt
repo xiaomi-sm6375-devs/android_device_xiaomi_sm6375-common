@@ -60,10 +60,6 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# Charger
-vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
-
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
