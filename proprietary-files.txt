@@ -243,14 +243,6 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
-# Firmware (vibrator)
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp.bin
-vendor/firmware/aw8624_rtp_lighthouse.bin
-vendor/firmware/aw8624_rtp_silk.bin
-vendor/firmware/osc_rtp_24K_5s.bin
-
 # FM
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
