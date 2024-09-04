@@ -284,9 +284,4 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.silead.hardware.fingerprintext</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISileadFingerprint/default</fqname>
-    </hal>
 </manifest>
