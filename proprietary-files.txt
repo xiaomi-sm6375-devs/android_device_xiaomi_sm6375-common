@@ -1,6 +1,5 @@
-# All unpinned blobs below are extracted from OS1.0.13.0.TKCEUXM (VEUXEEAGlobal)
+# All unpinned blobs below are extracted from OS2.0.9.0.UMQEUXM (SUNSTONEGlobal)
 # dada: OS2.0.217.0.WOCMIXM (dada_global)
-# sunstone: OS2.0.5.0.UMQMIXM (sunstone_global)
 
 # ADSP
 vendor/bin/adsprpcd
@@ -9,7 +8,7 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
 # Alarm
-product/app/PowerOffAlarm/PowerOffAlarm.apk
+system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -130,24 +129,24 @@ vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
-# Display (SDM) - from sunstone
-vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
-vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
-vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
-vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
-vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
-vendor/lib64/libdisplayskuutils.so|d467f3bcaeafa6ed9de62afe2c00a3be46f4bb0f
-vendor/lib64/libdpps.so|b7d8458a66fd8510a7a490c1eebd3bac3fb159ec|7d578a3ae39abc0b1f99672be53a5bd7b55caef2
-vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
-vendor/lib64/libqrtrclient.so|51c55fea28fa475ae9b2c64592f32802e6ba6c25
-vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
-vendor/lib64/librcmask.so|8feb479fe590b6aec282ce3342574d9113f80516
-vendor/lib64/libsdm-color.so|1c416b205c996575d26a41c5d7a9d07728f9134a
-vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
-vendor/lib64/libsdm-diag.so|393c9ad3e3ad3210515900627f65bf6e3633226e
-vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|161a19a7e915174ff31a2ed05acbf0fc98368bb8
-vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
+# Display (SDM)
+vendor/etc/display/DPU660.xml
+vendor/etc/display/DPU670.xml
+vendor/etc/display/DPU720.xml
+vendor/etc/display/DPU7__.xml
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libqrtrclient.so
+vendor/lib64/libqseed3.so
+vendor/lib64/librcmask.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -356,6 +355,7 @@ system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk
@@ -454,15 +454,6 @@ vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
-# Neural Networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-gpu.so
-vendor/lib64/unnhal-acc-hvx.so
-
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
@@ -532,20 +523,9 @@ vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
+vendor/etc/qcril_database/upgrade/config/11.0_config.sql
 vendor/etc/qcril_database/upgrade/config/12.0_config.sql
 vendor/etc/qcril_database/upgrade/config/13.0_config.sql
-vendor/etc/qcril_database/upgrade/config/14.0_config.sql
-vendor/etc/qcril_database/upgrade/config/15.0_config.sql
-vendor/etc/qcril_database/upgrade/config/16.0_config.sql
-vendor/etc/qcril_database/upgrade/config/17.0_config.sql
-vendor/etc/qcril_database/upgrade/config/18.0_config.sql
-vendor/etc/qcril_database/upgrade/config/19.0_config.sql
-vendor/etc/qcril_database/upgrade/config/20.0_config.sql
-vendor/etc/qcril_database/upgrade/config/21.0_config.sql
-vendor/etc/qcril_database/upgrade/config/22.0_config.sql
-vendor/etc/qcril_database/upgrade/config/23.0_config.sql
-vendor/etc/qcril_database/upgrade/config/24.0_config.sql
-vendor/etc/qcril_database/upgrade/config/25.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
@@ -556,23 +536,13 @@ vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/13_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/14_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/15_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/16_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/17_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/18_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/19_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/20_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/21_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/22_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/23_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/24_version_update_ecc_table.sql
-vendor/etc/qcril_database/upgrade/other/25_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql
+vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql
 vendor/etc/qcril_database/qcrilNr.db
@@ -614,7 +584,7 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
