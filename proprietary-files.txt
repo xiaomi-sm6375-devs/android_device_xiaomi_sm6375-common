@@ -681,24 +681,6 @@ vendor/bin/mi_thermald
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 
-# Thermal configs
-vendor/etc/thermal-arvr.conf
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-class0.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-extreme.conf
-vendor/etc/thermal-high.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-nevigation.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-youtube.conf
-vendor/etc/thermald-devices.conf
-
 # Time services
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
