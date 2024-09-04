@@ -2,96 +2,11 @@
 # dada: OS2.0.217.0.WOCMIXM (dada_global)
 # sunstone: OS2.0.5.0.UMQMIXM (sunstone_global)
 
-# ACDB
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_General_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Global_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/global/aw882xx/QRD_global_aw882xx_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_General_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Global_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/global/fs19xx/QRD_global_fs19xx_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_General_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Global_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_General_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Global_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/india/aw882xx/QRD_india_aw882xx_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_General_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Global_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/india/fs19xx/QRD_india_fs19xx_workspaceFile.qwsp
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/adsp_avs_config.acdb
-
-# ACDB loader
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
-
-# ADSP modules
-vendor/lib/rfsa/adsp/bm2n06.bin
-vendor/lib/rfsa/adsp/bm2n08.bin
-vendor/lib/rfsa/adsp/bm2n12.bin
-vendor/lib/rfsa/adsp/bm2n13.bin
-vendor/lib/rfsa/adsp/bm2n14.bin
-vendor/lib/rfsa/adsp/bm2n15.bin
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
-vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
-vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
-vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libhdr_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
-vendor/lib/rfsa/adsp/misound_res.bin
-vendor/lib/rfsa/adsp/misound_res_headphone.bin
-vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -665,10 +580,6 @@ vendor/firmware/a615_zap.b01
 vendor/firmware/a615_zap.b02
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a630_sqe.fw
-
-# Firmware (audio)
-vendor/firmware/aw882xx_pid_2113_acf.bin
-vendor/firmware/fs1958.fsm
 
 # Firmware (IPA)
 vendor/etc/init/ipa_fws.rc
