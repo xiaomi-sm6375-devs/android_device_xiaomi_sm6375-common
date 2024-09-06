@@ -72,6 +72,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/smd3                 0660   bluetooth  bluetooth
 /dev/btpower              0660   bluetooth  system
+/dev/btfmslim             0660   bluetooth  system
 
 #permissions for pta
 /dev/pta                  0660   system     system
@@ -338,6 +339,7 @@ firmware_directories /vendor/firmware_mnt/image/
 #nfc permissions
 /dev/nfc-nci              0660    nfc         nfc
 /dev/nq-nci               0660    nfc         nfc
+/dev/st21nfc              0660    nfc         nfc
 /dev/assd                 0660    nfc         nfc
 
 # UIO devices

@@ -75,6 +75,8 @@ on late-fs
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
+
+    mkdir /data/vendor/.tp/ 0775 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
@@ -102,17 +104,32 @@ on boot
     chown system system /sys/bus/platform/devices/soc:fpc1020/hw_reset
     chown system system /sys/bus/platform/devices/soc:fpc1020/irq
     chown system system /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+    chown system system /sys/bus/platform/devices/soc:fpc1020/power_ctrl
     chown system system /sys/bus/platform/devices/soc:fpc1020/regulator_enable
+    chown system system /sys/bus/platform/devices/soc:fpc1020/screen
     chown system system /sys/bus/platform/devices/soc:fpc1020/compatible_all
 
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/hw_reset
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/irq
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/power_ctrl
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/regulator_enable
+    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/screen
     chmod 0644 /sys/bus/platform/devices/soc:fpc1020/compatible_all
+
+    chown system system /sys/bus/i2c/drivers/fts_ts/2-0038/fts_edge_mode
+    chown system system /sys/bus/i2c/drivers/fts_ts/2-0038/fts_charger_mode
+    chown system system /sys/bus/i2c/drivers/fts_ts/2-0038/fts_rw_reg
+
+    chmod 0666 /sys/bus/i2c/drivers/fts_ts/2-0038/fts_edge_mode
+    chmod 0666 /sys/bus/i2c/drivers/fts_ts/2-0038/fts_charger_mode
+    chmod 0666 /sys/bus/i2c/drivers/fts_ts/2-0038/fts_rw_reg
+
     chown system system /sys/class/thermal/thermal_message/sconfig
 
     mkdir /mnt/vendor/persist/camera 0777 system system
+    chmod 0777 /data/vendor/camera
+    chmod 0666 /mnt/vendor/persist/camera/rear_dc_cal_wd.bin
     chmod 0666 /mnt/vendor/persist/camera/rear_dc_cal_wu.bin
     chmod 0666 /data/vendor/camera/com.xiaomi.dcal.wu.data
 
