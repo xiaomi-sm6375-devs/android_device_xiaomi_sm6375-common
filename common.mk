@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.kernel.post_boot-blair.sh \
+    init.qti.early_init.sh \
     init.qcom.rc \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \

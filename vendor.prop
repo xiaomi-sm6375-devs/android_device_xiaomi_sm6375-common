@@ -221,7 +221,6 @@ persist.vendor.sensors.sync_request=true
 # SoC
 ro.boot.product.vendor.sku=holi
 ro.soc.manufacturer=QTI
-ro.soc.model=SM6375
 
 # USB
 sys.usb.mtp.batchcancel=1

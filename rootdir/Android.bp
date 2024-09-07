@@ -51,3 +51,9 @@ sh_binary {
     src: "bin/init.kernel.post_boot-blair.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.qti.early_init.sh",
+    src: "bin/init.qti.early_init.sh",
+    vendor: true,
+}
