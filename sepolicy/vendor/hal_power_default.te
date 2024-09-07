@@ -1,3 +1,5 @@
 type proc_touchpanel, fs_type, proc_type;
-allow hal_power_default proc_touchpanel:dir search;
-allow hal_power_default proc_touchpanel:file rw_file_perms;
+type sysfs_touchpanel, fs_type, sysfs_type;
+
+allow hal_power_default { proc_touchpanel sysfs_touchpanel }:dir search;
+allow hal_power_default { proc_touchpanel sysfs_touchpanel }:file rw_file_perms;
