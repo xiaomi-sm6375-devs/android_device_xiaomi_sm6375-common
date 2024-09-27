@@ -14,6 +14,9 @@ genfscon sysfs /devices/platform/soc/4c88000.i2c/i2c-2/2-0038/fts_gesture_mode  
 genfscon sysfs /devices/platform/soc/4c90000.i2c/i2c-3/3-004e/tcpc/type_c_port0/dual-role-type_c_port0 u:object_r:vendor_sysfs_usb_c:s0
 genfscon sysfs /devices/platform/soc/soc:xm_pd_adapter/Charging_Adapter/pd_adapter u:object_r:vendor_sysfs_usbpd_device:s0
 
+# Vibrator
+genfscon sysfs /devices/platform/soc/soc:vibrator/leds/vibrator u:object_r:sysfs_leds:s0
+
 # Wakeup nodes
 genfscon sysfs /devices/platform/soc/4a80000.i2c/i2c-4/4-0055/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4a80000.i2c/i2c-4/4-005a/wakeup u:object_r:sysfs_wakeup:s0
