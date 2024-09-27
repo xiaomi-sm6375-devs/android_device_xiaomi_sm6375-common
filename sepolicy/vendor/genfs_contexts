@@ -13,6 +13,9 @@ genfscon sysfs /devices/platform/soc/soc:fpc1020                                
 genfscon sysfs /devices/platform/soc/soc:goodix_fp                                 u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:silead_fp                                 u:object_r:vendor_sysfs_fingerprint:s0
 
+# Sensors
+genfscon sysfs /devices/virtual/huaqin/interface/hw_info/pcba_config               u:object_r:sysfs_huaqin:s0
+
 # Touchpanel
 genfscon proc /tp_gesture                                                          u:object_r:proc_touchpanel:s0
 genfscon sysfs /devices/platform/soc/4c88000.i2c/i2c-2/2-0038/fts_gesture_mode     u:object_r:sysfs_touchpanel:s0
