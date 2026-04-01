@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2023-2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-
     <!-- Flag indicating whether the device supports RTT (real-time text) -->
     <bool name="config_support_rtt">true</bool>
 
@@ -13,5 +12,4 @@
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
     <string name="config_ims_rcs_package" translatable="false">org.codeaurora.ims</string>
-
 </resources>
